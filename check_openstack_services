@@ -1,0 +1,5 @@
+nova service-list
+glance service-list
+sudo rabbitmqctl cluster_status
+glance-control all status
+
