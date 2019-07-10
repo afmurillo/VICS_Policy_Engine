@@ -2,6 +2,7 @@
 from BaseHTTPServer import BaseHTTPRequestHandler,HTTPServer
 import json
 import os
+from Instance import Instance
 from urlparse import parse_qs
 
 reserved_words = ['role','network']
@@ -64,38 +65,60 @@ class myHandler(BaseHTTPRequestHandler):
 		attempted_operation = path.split("/")[1]
 		attempted_operation_subtype = path.split("/")[2]
 		print "Subype: ", attempted_operation_subtype
-		if (attempted_operation_subtype=="network"):
-			attempted_resource_name = os.popen("openstack network list | grep " + id + " | awk '{print $4}'").read().split("\n")[0]
-		else:
-			print "not suppported subtype"
-		  	return "False"
 
 		for i in range(len(parsed_rules)):
 			if user == parsed_rules[i]["user"]:
-				# We found the user, now gotta see if can perform that operation
-				print "Found user"
 				for j in range(len(parsed_rules[i]['permissions']['operations'])):
 					if ((attempted_operation == "update") and (parsed_rules[i]['permissions']['operations'][j] == "delete" or parsed_rules[i]['permissions']['operations'][j] == "modify")):
-							#The user can perform the operation, but gotta check if can perform on THAT resource
-							print "Update operation"
-							try:
-								print "Trying to get resource name"
-								print attempted_resource_name
-
-								print "Resources Permissions"
-								print parsed_rules[i]['permissions']['resources']
-								resource_index = parsed_rules[i]['permissions']['resources'].index(attempted_resource_name)
+						#The user can perform the operation, but gotta check if can perform on THAT resource
+						for k in range(len(parsed_rules[i]['permissions']['resources'])):
+							if id == parsed_rules[i]['permissions']['resources'][k].id:
 								return "True"
-							except ValueError:
-								print "Error!"
-								return "False"
-
+							if parsed_rules[i]['permissions']['resources'][k].type == "network":
+								for l in range(len(parsed_rules[i]['permissions']['resources'][k].members)):
+									if id == parsed_rules[i]['permissions']['resources'][k].members[l].id:
+										return "True"
 		return "False"
 
 
+def get_instances(members_names, instances_list):
+	instances = []
+	for i in range(len(members_names)):
+		a_name = members_names[i]
+                #an_id=os.popen("nova list | grep " + a_name + " | awk '{print $2}'").read().split("\n")[0]
+		an_id = get_object_id(instances_list, a_name)
+                instance = Instance(a_name, an_id)
+                #print instance.__dict__
+                instances.append(instance)
+
+	return instances
+
+
+def testing():
+	network_list = os.popen("openstack network list").read().split("\n")
+	for i in range(len(network_list)):
+		print network_list[i]
+
+	id = get_network_id(network_list, "field")
+	print id
+
+def get_object_id(object_list, object_name):
+        for i in range(len(object_list)):
+                a_line=object_list[i].split(" ")
+                if len(a_line) > 2:
+			if a_line[3] == "field":
+				return a_line[1]
+
+
+
 def parse_policy_file():
+
+	network_list = os.popen("openstack network list").read().split("\n")
+	instance_list = os.popen("nova list").read().split("\n")
+
 	policy_file = open("high_policy.pl", 'r')
 	lines = policy_file.readlines()
+
 	for line in lines:
 
 		if line[0]!="#":
@@ -108,19 +131,25 @@ def parse_policy_file():
 				roles.append(role_permissions)
 			elif line.split(":")[0]=="network":
 				# We found a new network, add it to the list
-				network=dict()
-				network["name"] = line.split(":")[1].strip().split("(")[0].strip()
-				network["members"] = [x.strip() for x in line.split(":")[1].split("(")[1].split(")")[0].split(',')]
-				networks.append(network)
-				#print network
+				name = line.split(":")[1].strip().split("(")[0].strip()
+
+				#toDo: We should optimize this and only run openstack commands once
+
+				#id=os.popen("openstack network list | grep " + name + " | awk '{print $2}'").read().split("\n")[0]
+				id = get_object_id(network_list,name)
+
+				members_names = [x.strip() for x in line.split(":")[1].split("(")[1].split(")")[0].split(',')]
+				members = get_instances(members_names, instance_list)
+				instance = Instance(name, id, "network", members)
+				networks.append(instance)
 			else:
 				#Everything else is considered an alias
 				if line.find("(")== -1:
 					# This is an alias used to group a set of entities
 					group=dict()
 					group["name"] = line.split(":")[0].strip()
-					group["members"]=[x.strip() for x in line.split(":")[1].split(",")]
-					#print group
+					members_names = [x.strip() for x in line.split(":")[1].split(",")]
+					group["members"] = get_instances(members_names, instance_list)
 					groups.append(group)
 				#This is either a domain or a role rule
 				else:
@@ -157,12 +186,8 @@ def extract_networks(a_domain):
 	entities = []
 	for i in range(len(a_domain['members'])):
 		for j in range(len(networks)):
-			if a_domain['members'][i] == networks[j]['name']:
-				group_elements = extract_groups(networks[j])
-				group_elements.append(networks[j]['name'])
-
-		for k in range(len(group_elements)):
-			entities.append(group_elements[k])
+			if a_domain['members'][i] == networks[j].name:
+				entities.append(networks[j])
 	return entities
 
 def extract_domains(a_rule):
@@ -191,13 +216,15 @@ def build_rules():
 		for j in range(len(domains)):
 			if domains[j]['name'] in rules[i]['resource']:
 				resource_list = extract_domains(rules[i])
-				#print resource_list
+		#for j in range(len(resource_list)):
+		#print "Domain"
+		#print resource_list[j].__dict__
 
-		for j in range(len(networks)):
-			if networks[j]['name'] in rules[i]['resource']:
-				resource_list = extract_groups(networks[j])
-				#resource_list.append(networks[j]['name'])
-				#print resource_list
+		#for j in range(len(networks)):
+		#if networks[j]['name'] in rules[i]['resource']:
+		#resource_list = extract_groups(networks[j])
+		#resource_list.append(networks[j]['name'])
+		#print resource_list
 
 		rule['permissions']['resources']=resource_list
 
@@ -206,13 +233,10 @@ def build_rules():
 				operations = roles[j]['operations']
 
 		rule['permissions']['operations'] = operations
-		print rule
+		print str(rule)
 		parsed_rules.append(rule)
 
-#def build_resources_tuples(a_rule):
-#for i in range(len(parsed_rules)):
-
-
+#testing()
 parse_policy_file()
 build_rules()
 
@@ -221,7 +245,7 @@ try:
 	#Create a web server and define the handler to manage the
 	#incoming request
 	server = HTTPServer(('', PORT_NUMBER), myHandler)
-	print 'Started httpserver on port ' , PORT_NUMBER
+	print 'Started http server on port ' , PORT_NUMBER
 	#Wait forever for incoming htto requests
 	server.serve_forever()
 
