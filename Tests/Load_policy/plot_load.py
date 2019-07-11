@@ -51,9 +51,17 @@ print std_values
 
 #legend((r'$L101$', r'$L102$', r'$L103$'), prop=FontProperties(size=16))
 #title('Tank Levels with Control')
-savefig(sys.argv[1], dpi=100)
-
 x=np.array([1, 10, 100, 1000, 1000, 100000, 1000000])
 
+lw=1
+
 plt.figure()
-plt.errorbar(x, mean_values, yerr=std_values)
+plt.errorbar(x, mean_values, yerr=std_values, linewidth=lw)
+plt.xlabel('Number of Rules in Policy File')
+plt.ylabel('Time(s)')
+plt.grid(True)
+plt.title('Policy Parsing Time')
+
+savefig(sys.argv[1]+".png", dpi=100)
+
+
