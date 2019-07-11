@@ -32,7 +32,7 @@ class myHandler(BaseHTTPRequestHandler):
 	def do_POST(self):
 		content_length = int(self.headers['Content-Length']) # <--- Gets the size of data
 
-		print self.headers
+		#print self.headers
 		post_data = self.rfile.read(content_length)
 		#print "Path: ", str(self.path)
 
@@ -75,8 +75,8 @@ class myHandler(BaseHTTPRequestHandler):
 						#The user can perform the operation, but gotta check if can perform on THAT resource
 						#print "found operation"
 						for k in range(len(parsed_rules[i]['permissions']['resources'])):
-							print parsed_rules[i]['permissions']['resources'][k].__dict__
-							print parsed_rules[i]['permissions']['resources'][k].id
+							#print parsed_rules[i]['permissions']['resources'][k].__dict__
+							#print parsed_rules[i]['permissions']['resources'][k].id
 							if id == parsed_rules[i]['permissions']['resources'][k].id:
 								return "True"
 							if parsed_rules[i]['permissions']['resources'][k].type == "network":
@@ -147,12 +147,12 @@ def parse_policy_file():
 
 				#id=os.popen("openstack network list | grep " + name + " | awk '{print $2}'").read().split("\n")[0]
 				id = get_object_id(network_list,name)
-				print "network id ", id
+				#print "network id ", id
 				members_names = [x.strip() for x in line.split(":")[1].split("(")[1].split(")")[0].split(',')]
 				members = get_instances(members_names, instance_list)
 				instance = Instance(name, id, "network", members)
-				print "NETWORK"
-				print instance.__dict__
+				#print "NETWORK"
+				#print instance.__dict__
 				networks.append(instance)
 			else:
 				#Everything else is considered an alias
@@ -171,8 +171,8 @@ def parse_policy_file():
 						domain["name"] = line.split("(")[0].strip()
 						domain["members"] = [x.strip() for x in line.split("(")[1].split(")")[0].split(',')]
 						domains.append(domain)
-						print "DOMAIN"
-						print domain
+						#print "DOMAIN"
+						#print domain
 					else:
 					# This is a role rule
 						rule=dict()
@@ -181,15 +181,15 @@ def parse_policy_file():
 						rule["resource"] = []
 						rule["resource"].append(line.split(":")[1].split("(")[1].split(")")[0].strip())
 						rules.append(rule)
-						print "RULES"
-						print rule
+						#print "RULES"
+						#print rule
 
 	policy_file.close()
 
 def extract_domains(a_domain):
 	resources=[]
-	print "processed domain"
-	print a_domain
+	#print "processed domain"
+	#print a_domain
 	for i in range(len(networks)):
 		for j in range(len(a_domain['members'])):
 			if a_domain['members'][j] == networks[i].name:
@@ -221,9 +221,6 @@ def build_rules():
 					resource_list.append(some_resources[k])
 		if resource_list:
 			rule['permissions']['resources']=resource_list
-			for k in range(len(rule['permissions']['resources'])):
-				print "resources"
-				print rule['permissions']['resources'][k].__dict__
 
 		else:
 			for j in range(len(networks)):
@@ -231,13 +228,9 @@ def build_rules():
 					resource_list.append(networks[j])
 			rule['permissions']['resources']=resource_list
 
-                        for k in range(len(rule['permissions']['resources'])):
-                                print "network resources"
-                                print rule['permissions']['resources'][k].__dict__
 
-
-		print "Rule"
-		print rule
+		#print "Rule"
+		#print rule
 		parsed_rules.append(rule)
 
 
@@ -248,7 +241,7 @@ build_rules()
 try:
 	#Create a web server and define the handler to manage the incoming request
 	server = HTTPServer(('', PORT_NUMBER), myHandler)
-	print 'Started http server on port ' , PORT_NUMBER
+	print 'started http server on port ' , PORT_NUMBER
 	#Wait forever for incoming htto requests
 	server.serve_forever()
 
