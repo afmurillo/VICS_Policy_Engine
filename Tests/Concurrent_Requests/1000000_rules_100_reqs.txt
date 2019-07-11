@@ -1,0 +1,9 @@
+These results were generated using 1000000 rule
+and 100 concurrent requests
+
+
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 1 99
+HttpException: 500: Server Error for url: http://157.253.199.73:9696/v2.0/networks/4ccd3c99-3869-423e-8130-06258bb4bd5f, Request Failed: internal server error while processing your request.
+real    1m43.009s
+user    1m56.464s
+sys     0m17.600s

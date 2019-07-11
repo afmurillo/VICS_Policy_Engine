@@ -1,0 +1,51 @@
+These results were generated using 1000 rules
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000_                                                                                      high_policy.pl
+
+real    0m1.593s
+user    0m1.056s
+sys     0m0.172s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000_                                                                                      high_policy.pl
+
+real    0m1.641s
+user    0m1.048s
+sys     0m0.176s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000_                                                                                      high_policy.pl
+
+real    0m1.726s
+user    0m1.044s
+sys     0m0.180s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000_                                                                                      high_policy.pl
+
+real    0m1.815s
+user    0m1.040s
+sys     0m0.180s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000_                                                                                      high_policy.pl
+
+real    0m1.600s
+user    0m1.028s
+sys     0m0.192s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000_                                                                                      high_policy.pl
+
+real    0m1.606s
+user    0m1.064s
+sys     0m0.168s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000_                                                                                      high_policy.pl
+
+real    0m1.688s
+user    0m1.052s
+sys     0m0.164s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000_                                                                                      high_policy.pl
+
+real    0m1.588s
+user    0m1.024s
+sys     0m0.192s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000_                                                                                      high_policy.pl
+
+real    0m1.588s
+user    0m1.076s
+sys     0m0.140s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000_                                                                                      high_policy.pl
+
+real    0m1.610s
+user    0m1.096s
+sys     0m0.144s

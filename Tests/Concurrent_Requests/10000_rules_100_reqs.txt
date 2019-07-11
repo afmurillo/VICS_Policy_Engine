@@ -1,0 +1,57 @@
+These results were generated using 10000 rule
+and 100 concurrent requests
+
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 1 99
+real    0m20.385s
+user    1m56.056s
+sys     0m14.636s
+
+
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 2 99
+real    0m20.617s
+user    1m56.652s
+sys     0m14.404s
+
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 3 99
+real    0m20.197s
+user    1m56.464s
+sys     0m14.880s
+
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 4 99
+real    0m20.444s
+user    1m57.336s
+sys     0m14.356s
+
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 5 99
+real    0m20.192s
+user    1m56.712s
+sys     0m14.560s
+
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 6 99
+real    0m20.318s
+user    1m56.768s
+sys     0m14.752s
+
+
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 7 99
+real    0m20.601s
+user    1m57.240s
+sys     0m14.316s
+
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 8 99
+real    0m20.372s
+user    1m57.780s
+sys     0m14.736s
+
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 9 99
+real    0m20.580s
+user    1m57.088s
+sys     0m14.600s
+
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 10 99
+real    0m20.423s
+user    1m57.388s
+sys     0m14.336s
+
+
+

@@ -1,0 +1,67 @@
+These results were generated using 1000000 rules
+
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000000_high_policy.pl
+
+real    0m9.566s
+user    0m8.592s
+sys     0m0.484s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000000_high_policy.pl
+
+real    0m9.643s
+user    0m8.648s
+sys     0m0.540s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000000_high_policy.pl
+
+real    0m9.524s
+user    0m8.680s
+sys     0m0.468s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000000_high_policy.pl
+
+real    0m9.464s
+user    0m8.576s
+sys     0m0.524s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000000_high_policy.pl
+
+real    0m9.621s
+user    0m8.756s
+sys     0m0.488s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000000_high_policy.pl
+
+real    0m10.071s
+user    0m9.068s
+sys     0m0.488s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000000_high_policy.pl
+
+real    0m9.482s
+user    0m8.632s
+sys     0m0.476s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000000_high_policy.pl
+
+real    0m9.514s
+user    0m8.684s
+sys     0m0.448s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000000_high_policy.pl
+
+real    0m9.746s
+user    0m8.816s
+sys     0m0.432s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000000_high_policy.pl
+
+real    0m9.677s
+user    0m8.716s
+sys     0m0.572s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000000_high_policy.pl
+
+real    0m9.545s
+user    0m8.588s
+sys     0m0.504s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000000_high_policy.pl
+
+real    0m9.511s
+user    0m8.644s
+sys     0m0.492s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/1000000_high_policy.pl
+
+real    0m9.612s
+user    0m8.732s
+sys     0m0.484s

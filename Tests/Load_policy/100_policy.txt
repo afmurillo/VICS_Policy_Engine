@@ -1,0 +1,52 @@
+These results were generated using 100 rules
+
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/100_high_policy.pl
+
+real    0m1.651s
+user    0m1.092s
+sys     0m0.140s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/100_high_policy.pl
+
+real    0m1.606s
+user    0m1.068s
+sys     0m0.148s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/100_high_policy.pl
+
+real    0m1.586s
+user    0m1.064s
+sys     0m0.148s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/100_high_policy.pl
+
+real    0m1.593s
+user    0m1.108s
+sys     0m0.116s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/100_high_policy.pl
+
+real    0m1.585s
+user    0m1.036s
+sys     0m0.180s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/100_high_policy.pl
+
+real    0m1.596s
+user    0m1.052s
+sys     0m0.172s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/100_high_policy.pl
+
+real    0m1.594s
+user    0m1.096s
+sys     0m0.128s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/100_high_policy.pl
+
+real    0m1.594s
+user    0m1.064s
+sys     0m0.152s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/100_high_policy.pl
+
+real    0m1.719s
+user    0m1.084s
+sys     0m0.144s
+andres@germania:~/VICS_Policy_Engine$ time python policy_engine.py load_test/100_high_policy.pl
+
+real    0m1.599s
+user    0m1.072s
+sys     0m0.152s

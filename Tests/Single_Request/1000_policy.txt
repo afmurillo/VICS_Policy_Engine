@@ -1,0 +1,52 @@
+These results were generated using 1000 rules
+
+andres@germania:~/VICS_Policy_Engine$ time openstack network set --name field1 4ccd3c99-3869-423e-8130-06258bb4bd5f
+
+real    0m1.132s
+user    0m0.616s
+sys     0m0.084s
+andres@germania:~/VICS_Policy_Engine$ time openstack network set --name field2 4ccd3c99-3869-423e-8130-06258bb4bd5f
+
+real    0m1.107s
+user    0m0.576s
+sys     0m0.092s
+andres@germania:~/VICS_Policy_Engine$ time openstack network set --name field3 4ccd3c99-3869-423e-8130-06258bb4bd5f
+
+real    0m1.372s
+user    0m0.572s
+sys     0m0.096s
+andres@germania:~/VICS_Policy_Engine$ time openstack network set --name field4 4ccd3c99-3869-423e-8130-06258bb4bd5f
+
+real    0m1.227s
+user    0m0.612s
+sys     0m0.068s
+andres@germania:~/VICS_Policy_Engine$ time openstack network set --name field5 4ccd3c99-3869-423e-8130-06258bb4bd5f
+
+real    0m1.107s
+user    0m0.564s
+sys     0m0.104s
+andres@germania:~/VICS_Policy_Engine$ time openstack network set --name field6 4ccd3c99-3869-423e-8130-06258bb4bd5f
+
+real    0m1.212s
+user    0m0.580s
+sys     0m0.084s
+andres@germania:~/VICS_Policy_Engine$ time openstack network set --name field7 4ccd3c99-3869-423e-8130-06258bb4bd5f
+
+real    0m1.152s
+user    0m0.604s
+sys     0m0.088s
+andres@germania:~/VICS_Policy_Engine$ time openstack network set --name field8 4ccd3c99-3869-423e-8130-06258bb4bd5f
+
+real    0m1.120s
+user    0m0.588s
+sys     0m0.084s
+andres@germania:~/VICS_Policy_Engine$ time openstack network set --name field9 4ccd3c99-3869-423e-8130-06258bb4bd5f
+
+real    0m1.098s
+user    0m0.560s
+sys     0m0.100s
+andres@germania:~/VICS_Policy_Engine$ time openstack network set --name field10 4ccd3c99-3869-423e-8130-06258bb4bd5f
+
+real    0m1.122s
+user    0m0.612s
+sys     0m0.056s

@@ -1,0 +1,550 @@
+These results were generated using 1 rule
+and 50 concurrent requests
+
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 1 49
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd527
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd510
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd543
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd513
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd514
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd534
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd539
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd548
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd50
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd512
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd56
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd542
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd51
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd522
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd532
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd59
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd530
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd545
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd518
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd519
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd521
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd52
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd547
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd53
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd537
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd531
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd526
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd55
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd515
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd541
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd528
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd58
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd525
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd524
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd544
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd523
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd540
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd57
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd520
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd535
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd529
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd516
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd517
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd511
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd533
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd546
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd536
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd54
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd538
+
+real    0m11.777s
+user    0m58.508s
+sys     0m7.892s
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 2 49
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd511
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd514
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd50
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd59
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd512
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd57
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd518
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd515
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd56
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd516
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd51
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd55
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd52
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd53
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd531
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd530
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd54
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd544
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd535
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd538
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd525
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd527
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd513
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd526
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd58
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd510
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd533
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd534
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd532
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd522
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd528
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd519
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd521
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd517
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd523
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd537
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd529
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd536
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd548
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd539
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd520
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd547
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd541
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd545
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd524
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd543
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd546
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd542
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd540
+
+real    0m11.074s
+user    0m58.708s
+sys     0m7.764s
+
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 3 49
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd51
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd50
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd56
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd54
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd58
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd55
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd53
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd59
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd512
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd515
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd510
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd511
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd514
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd57
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd52
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd523
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd530
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd518
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd534
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd513
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd538
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd519
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd546
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd525
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd521
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd516
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd533
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd524
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd537
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd541
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd540
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd531
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd520
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd532
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd542
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd548
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd528
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd526
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd539
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd527
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd517
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd529
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd544
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd535
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd543
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd522
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd547
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd545
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd536
+
+real    0m10.443s
+user    0m58.580s
+sys     0m7.568s
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 4 49
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd53
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd57
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd50
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd54
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd58
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd52
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd56
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd512
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd510
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd514
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd522
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd513
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd51
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd517
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd511
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd524
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd516
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd515
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd55
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd532
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd547
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd520
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd544
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd527
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd59
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd530
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd526
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd529
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd528
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd518
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd521
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd542
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd539
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd534
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd540
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd531
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd525
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd537
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd523
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd545
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd535
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd548
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd536
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd533
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd541
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd519
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd543
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd546
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd538
+
+real    0m10.562s
+user    0m59.132s
+sys     0m7.800s
+
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 5 49
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd55
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd517
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd57
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd56
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd58
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd51
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd54
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd52
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd50
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd53
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd59
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd512
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd513
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd522
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd510
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd529
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd520
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd511
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd514
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd523
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd527
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd521
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd518
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd533
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd526
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd516
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd532
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd524
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd544
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd515
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd519
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd536
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd530
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd547
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd534
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd546
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd545
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd540
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd528
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd538
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd531
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd543
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd535
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd542
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd539
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd537
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd548
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd541
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd525
+
+real    0m10.696s
+user    0m59.676s
+sys     0m7.624s
+
+
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 6 49
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd52
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd54
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd55
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd50
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd513
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd53
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd57
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd51
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd510
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd511
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd56
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd59
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd521
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd516
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd523
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd545
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd512
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd522
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd520
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd514
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd58
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd534
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd525
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd515
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd517
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd546
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd537
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd539
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd540
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd529
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd527
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd518
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd519
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd528
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd532
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd526
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd530
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd524
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd533
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd541
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd536
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd531
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd542
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd547
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd544
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd548
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd543
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd535
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd538
+
+real    0m10.429s
+user    0m58.284s
+sys     0m7.912s
+
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 7 49
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd55
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd51
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd56
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd52
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd50
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd53
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd54
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd58
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd524
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd527
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd57
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd512
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd513
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd510
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd59
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd520
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd519
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd537
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd522
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd521
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd511
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd514
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd518
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd516
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd515
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd517
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd523
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd540
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd539
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd526
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd529
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd546
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd536
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd525
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd534
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd528
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd544
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd531
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd533
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd532
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd543
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd548
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd547
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd542
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd535
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd545
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd530
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd541
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd538
+
+real    0m10.497s
+user    0m58.752s
+sys     0m8.032s
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 8 49
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd53
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd51
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd52
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd54
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd510
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd55
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd58
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd515
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd50
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd514
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd526
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd512
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd56
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd523
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd520
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd524
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd546
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd532
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd548
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd511
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd59
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd544
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd518
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd513
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd517
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd522
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd519
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd57
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd537
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd521
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd541
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd543
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd516
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd525
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd535
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd527
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd531
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd529
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd533
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd542
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd536
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd528
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd530
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd545
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd534
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd547
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd538
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd539
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd540
+
+real    0m10.618s
+user    0m58.832s
+sys     0m7.696s
+
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 9 49
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd52
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd58
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd57
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd51
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd515
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd55
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd520
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd519
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd514
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd521
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd54
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd50
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd527
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd528
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd510
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd513
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd543
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd59
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd512
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd531
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd538
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd539
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd517
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd56
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd522
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd532
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd534
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd518
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd540
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd53
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd545
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd546
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd525
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd526
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd541
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd529
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd533
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd511
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd544
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd542
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd548
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd547
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd516
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd523
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd535
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd530
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd537
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd524
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd536
+
+real    0m10.625s
+user    0m59.148s
+sys     0m7.828s
+andres@germania:~/VICS_Policy_Engine$ time python concurrent_client.py 10 49
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd53
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd57
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd514
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd55
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd54
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd56
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd59
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd52
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd51
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd58
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd523
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd50
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd511
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd520
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd510
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd512
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd517
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd547
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd515
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd536
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd516
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd521
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd537
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd533
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd535
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd542
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd518
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd522
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd528
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd546
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd525
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd534
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd548
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd541
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd532
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd513
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd524
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd540
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd526
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd544
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd543
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd539
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd527
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd531
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd530
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd545
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd529
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd519
+No Network found for 4ccd3c99-3869-423e-8130-06258bb4bd538
+
+real    0m10.965s
+user    0m59.164s
+sys     0m7.772s
+
