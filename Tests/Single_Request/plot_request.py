@@ -50,7 +50,7 @@ plt.xlabel('Number of Rules in Policy File')
 plt.ylabel('Time(s)')
 plt.grid(True)
 plt.title('Request Response Time')
-
+plt.ylim((0, 2))  
 savefig(sys.argv[1]+".png", dpi=100)
 
 

@@ -5,6 +5,8 @@ from pylab import savefig
 #from matplotlib.font_manager import FontProperties
 import sys
 
+
+
 one_rule_t_r = [28.204, 28.756, 28.552, 28.964, 28.820, 28.588, 29.028, 28.944, 28.852, 28.756]
 one_rule_f_r = [58.508, 58.708, 58.580, 59.132, 59.676, 58.284, 58.752, 58.832, 59.148, 59.164]
 one_rule_h_r = [60+59.216, 60+57.404, 60+57.256, 60+58.004, 60+56.812, 60+57.340, 60+57.940, 60+56.640, 60+56.940, 60+55.980]
@@ -120,6 +122,7 @@ plt.errorbar(x, hundred_thousand_mean_values, yerr=hundred_thousand_std_values, 
 
 plt.xlabel('Number of Concurrent Requests')
 plt.ylabel('Time(s)')
+plt.ylim((20,140))
 plt.legend((r'$1 Rule$', r'$10 Rules$', r'$100 Rules$', r'$1000 Rules$', r'$10000 Rules$', r'$100000 Rules$'), loc='upper left')
 plt.grid(True)
 plt.title('Request Response Time')
